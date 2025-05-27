@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Evidence {
+  id          Int               @id @default(autoincrement())
+  code        String            @unique
+  type        String
+  title       String?
+  description String?
+  tags        String?
+  media       MediaAttachment[]
+  texts       TextAttachment[]
+}
+
+model MediaAttachment {
+  id          Int      @id @default(autoincrement())
+  type        String
+  url         String
+  caption     String?
+  evidenceId  Int
+  evidence    Evidence @relation(fields: [evidenceId], references: [id])
+}
+
+model TextAttachment {
+  id          Int      @id @default(autoincrement())
+  title       String
+  content     String
+  evidenceId  Int
+  evidence    Evidence @relation(fields: [evidenceId], references: [id])
+}
