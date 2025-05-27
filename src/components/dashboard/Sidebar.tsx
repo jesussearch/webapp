@@ -53,22 +53,23 @@ export default function Sidebar({
         }`}
       >
         <div className="modal-box w-full max-w-6xl max-h-[90vh] overflow-y-auto bg-base-200 p-8 rounded-lg shadow-2xl relative mx-4">
-          {/* Fixed Close Button (relative to the modal) */}
-          <div className="absolute top-5 right-10 z-50">
-            <button
-              onClick={onClose}
-              className="btn btn-lg btn-outline btn-error shadow-lg"
-            >
-              Close
-            </button>
-          </div>
-
           {/* Main Modal Content */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-800">
-              {selectedNode.code} – {selectedNode.title}
-            </h2>
-            <p className="text-sm text-gray-600">{selectedNode.description}</p>
+            <div className="flex flex-wrap items-start justify-between gap-4">
+              <h2 className="flex-1 text-3xl font-bold text-gray-800 min-w-0">
+                {selectedNode.code} – {selectedNode.title}
+              </h2>
+              <button
+                onClick={onClose}
+                className="btn btn-lg btn-outline btn-error shadow-lg shrink-0"
+              >
+                Close
+              </button>
+            </div>
+
+            <p className="text-sm text-gray-600 mt-4">
+              {selectedNode.description}
+            </p>
 
             {/* Sezione dei Tag */}
             {Array.isArray(selectedNode.tags) &&
