@@ -14,7 +14,7 @@ export default function Home() {
     <main
       className="min-h-screen flex flex-col items-center justify-center text-center p-8"
       style={{
-        backgroundImage: "url('/images/bg_image2.png')",
+        backgroundImage: "url('/images/bg_image2.svg')",
         backgroundSize: "contain",
         backgroundPosition: "center",
         backgroundRepeat: "repeat",

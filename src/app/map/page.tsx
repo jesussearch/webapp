@@ -84,7 +84,7 @@ export default function Home(): React.JSX.Element {
       <div
         className="relative rounded-lg overflow-hidden"
         style={{
-          backgroundImage: "url('/images/bg_image.png')",
+          backgroundImage: "url('/images/bg_image.svg')",
           backgroundSize: "contain",
           backgroundPosition: "center",
           backgroundRepeat: "repeat",
