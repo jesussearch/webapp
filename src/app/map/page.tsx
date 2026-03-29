@@ -96,6 +96,8 @@ export default function Home(): React.JSX.Element {
           backgroundPosition: "center",
           backgroundRepeat: "repeat",
           minHeight: "70vh",
+          backgroundColor: "#2E2E2E",
+          backgroundBlendMode: "Multiply"
         }}
       >
         {/* Add a semi-transparent overlay */}
