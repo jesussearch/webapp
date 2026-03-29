@@ -33,7 +33,7 @@ const typeColors: Record<string, string> = {
   A: "#4F46E5",
   B: "#059669",
   C: "#D97706",
-  D: "#DC2626"
+  D: "#000000"
 };
 
 export default function Home(): React.JSX.Element {
