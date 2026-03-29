@@ -29,6 +29,13 @@ interface EdgeElement {
 
 type Element = NodeElement | EdgeElement;
 
+const typeColors: Record<string, string> = {
+  A: "#4F46E5",
+  B: "#059669",
+  C: "#D97706",
+  D: "#DC2626"
+};
+
 export default function Home(): React.JSX.Element {
   const [elements, setElements] = useState<Element[]>([]);
 
