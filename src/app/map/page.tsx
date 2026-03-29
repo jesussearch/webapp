@@ -95,13 +95,11 @@ export default function Home(): React.JSX.Element {
           backgroundSize: "contain",
           backgroundPosition: "center",
           backgroundRepeat: "repeat",
-          minHeight: "70vh",
-          backgroundColor: "#2E2E2E",
-          backgroundBlendMode: "Multiply"
+          minHeight: "70vh"
         }}
       >
         {/* Add a semi-transparent overlay */}
-        {/*<div className="absolute inset-0 bg-white opacity-70"></div>*/}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
 
         {/* Content with relative positioning to appear above the overlay */}
         <div className="relative z-10">
