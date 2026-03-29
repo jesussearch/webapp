@@ -101,7 +101,7 @@ export default function Home(): React.JSX.Element {
         }}
       >
         {/* Add a semi-transparent overlay */}
-        <div className="absolute inset-0 bg-white opacity-70"></div>
+        {/*<div className="absolute inset-0 bg-white opacity-70"></div>*/}
 
         {/* Content with relative positioning to appear above the overlay */}
         <div className="relative z-10">
