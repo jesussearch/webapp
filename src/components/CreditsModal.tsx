@@ -1,4 +1,4 @@
-/src/components/CreditsModal.tsx
+// components/CreditsModal.tsx
 'use client';
 
 import React, { useState } from 'react';
