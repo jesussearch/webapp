@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import LoginDialog from "@/components/dashboard/LoginDialog";
-import CreditsModal from '@/components/CreditsModal';
+import CreditsModal from '@/components/CreditsModal.tsx';
 
 export default function Home() {
   const [showLogin, setShowLogin] = useState(false);
