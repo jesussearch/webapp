@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import LoginDialog from "@/components/dashboard/LoginDialog";
+import CreditsModal from '@/components/CreditsModal';
 
 export default function Home() {
   const [showLogin, setShowLogin] = useState(false);
@@ -53,6 +54,7 @@ export default function Home() {
         onClose={() => setShowLogin(false)}
         onSuccess={handleLoginSuccess}
       />
+      <CreditsModal />
     </main>
   );
 }
