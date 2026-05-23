@@ -136,6 +136,7 @@ export default function CreditsModal() {
                     <div><strong>Alex Rey Nicosia</strong> (5 SC)</div>
                     <div><strong>Angela Aniceti</strong> (3 SA)</div>
                     <div><strong>Rasvan Munteanu</strong> (3 SA)</div>
+                    <div><strong>Beatrice Matulescu/strong> (3 SA)</div>
                   </div>
                 </div>
 
