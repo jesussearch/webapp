@@ -54,7 +54,9 @@ export default function Home() {
         onClose={() => setShowLogin(false)}
         onSuccess={handleLoginSuccess}
       />
-      <CreditsModal />
+      <div className="w-full flex justify-center items-center">
+        <CreditsModal />
+      </div>
     </main>
   );
 }
